@@ -19,7 +19,6 @@ body{
 .desktop-img{
     display: none;
 }
-
 .mobile-img img{
     width: 100%;
     max-width: 480px;
@@ -32,14 +31,16 @@ body{
 }
 .item-type{
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1rem;
 }
 .title{
     font-weight: 700;
     font-family: "Fraunces";
     color: hsl(212, 21%, 14%);
-    font-size: 2rem;
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.5rem;
 }
 .desc{
     line-height: 1.4rem;
@@ -83,31 +84,49 @@ button:active{
 }
 @media (min-width: 700px){
     body{
-        flex-direction: column;
-    }
-    .images{
-        width: fit-content;
+        height: 100vh;
+        align-items: center;
+        margin: 0;
     }
     .card{
-        max-width: 100%;
-        border: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        max-width: 72vw;
+        max-width: 680px;
+        margin: 0;
+        max-height: 539px;
     }
     .mobile-img{
         display: none;
     }
     .desktop-img{
         display: block;
-        border: 2px solid black;
     }
     .desktop-img img{
-        max-width: 400px;
-        height: auto;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        height: 100%;
+        max-width: 36vw;
+        max-width: 340px;
     }
     .content{
-        border: 2px solid rgb(0, 255, 98);
-        max-width: 400px;
+        padding: 2vw;
+        max-width: 32vw;
+        max-width: 340px;
     }
-    .content{
-        padding: 0;
+    .item-type{
+        margin-bottom: 1.8rem;
+    }
+    .title{
+        margin-bottom: 2rem;
+    }
+    .desc{
+        margin-bottom: 2rem;
+    }
+    .price{
+        margin-bottom: 3rem;
+    }
+    .cart{
+        height: 5vh;
     }
 }
